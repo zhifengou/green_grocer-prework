@@ -27,7 +27,7 @@ def apply_coupons(cart,coupons)
         new_hash["#{key} W/COUPON"]={}
         new_hash["#{key} W/COUPON"][:price]=each[:cost]
         new_hash["#{key} W/COUPON"][:clearance]=value[:clearance]
-         new_hash["#{key} W/COUPON"][:count] = 1
+        new_hash["#{key} W/COUPON"][:count] = 1
     end
   end
 end
