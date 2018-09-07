@@ -20,7 +20,7 @@ def apply_coupons(cart,coupons)
     coupons.each do|each|
                                 # nested if statements here
     if key==each[:item]
-    new_hash[key][:count]-=each[:num] if &&new_hash[key][:count]>=each[:num]
+    new_hash[key][:count]-=each[:num] if new_hash[key][:count]>=each[:num]
       if new_hash["#{key} W/COUPON"]
        new_hash["#{key} W/COUPON"][:count]+=1
       else
