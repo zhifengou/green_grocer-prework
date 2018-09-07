@@ -18,7 +18,7 @@ def apply_coupons(cart,coupons)
   cart.each do|key,value|
      new_hash[key]=value
     coupons.each do|each|
-                                # nested if statements here
+# nested if statements here
     if key==each[:item]&&new_hash[key][:count]>=each[:num]
     new_hash[key][:count]-=each[:num] 
       if new_hash["#{key} W/COUPON"]
